@@ -26,6 +26,7 @@ jobs:
         echo "deb https://download.mono-project.com/repo/debian stable-buster main" > /etc/apt/sources.list.d/mono-official-stable.list
         apt update
         apt install mono-devel fsharp gtk-sharp2 -y
+        apt install libssl-dev -y
     - uses: actions/checkout@v2
       with:
           fetch-depth: 0
